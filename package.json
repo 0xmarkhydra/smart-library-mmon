@@ -11,7 +11,7 @@
     "lint": "eslint 'src/**/*.{js,ts}'",
     "lint:fix": "eslint 'src/**/*.{js,ts}' --fix",
     "next-version": "npm version patch",
-    "push": "npm run next-version && npm publish"
+    "push": "npm run next-version && npm run build && npm run publish && git push"
   },
   "keywords": [],
   "author": "",
